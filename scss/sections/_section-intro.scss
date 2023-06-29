@@ -9,6 +9,11 @@
 		min-height: 57.9rem;
 	}
 
+	@include breakpoint(sm, max) {
+		min-height: 41rem;
+		padding-top: 14.7rem;
+	}
+
 	.content-holder {
 		display: flex;
 		flex-direction: column;
@@ -17,6 +22,10 @@
 
 		@include breakpoint(md, max) {
 			padding-left: 0.2rem;
+		}
+
+		@include breakpoint(sm, max) {
+			padding-left: 0;
 		}
 	}
 
@@ -30,6 +39,11 @@
 		@include breakpoint(md, max) {
 			margin-bottom: 4.5rem;
 			font-size: 6rem;
+		}
+
+		@include breakpoint(sm, max) {
+			margin-bottom: 4.9rem;
+			font-size: 3rem;
 		}
 	}
 

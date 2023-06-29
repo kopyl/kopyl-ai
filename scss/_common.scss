@@ -4,6 +4,11 @@
 	margin: auto;
 	padding-left: 6.2rem;
 	padding-right: 6.2rem;
+
+	@include breakpoint(sm, max) {
+		padding-left: 2.6rem;
+		padding-right: 2.6rem;
+	}
 }
 
 .row {
@@ -60,6 +65,11 @@
 		margin-bottom: 1.6rem;
 		font-size: 4rem;
 	}
+
+	@include breakpoint(sm, max) {
+		margin-bottom: 1.1rem;
+		font-size: 2.6rem;
+	}
 }
 
 .text-center {
@@ -92,5 +102,9 @@
 	.text-holder {
 		font-size: 2rem;
 		line-height: 1.56;
+
+		@include breakpoint(sm, max) {
+			font-size: 1.4rem;
+		}
 	}
 }

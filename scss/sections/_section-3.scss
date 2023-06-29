@@ -9,6 +9,13 @@
 			min-height: 57.2rem;
 		}
 
+		@include breakpoint(sm, max) {
+			padding-top: 4rem;
+			padding-left: 2.4rem;
+			padding-right: 2.4rem;
+			min-height: 37.4rem;
+		}
+
 		&::after {
 			content: "";
 			position: absolute;
@@ -19,6 +26,14 @@
 			background: url("#{$images}illustration-06.png") no-repeat;
 			background-position: bottom;
 			background-size: 100%;
+		}
+	}
+
+	.text-holder {
+		br {
+			@include breakpoint(sm, max) {
+				display: none;
+			}
 		}
 	}
 }

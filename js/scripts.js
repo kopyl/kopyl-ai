@@ -1,6 +1,6 @@
 document.addEventListener('DOMContentLoaded', () => {
 	// mobileMenu();
-	// scrollToSection();
+	scrollToSection();
 	// initModals()
 });
 
@@ -25,28 +25,6 @@ function mobileMenu() {
 	});
 };
 
-
-
-
-function addAnimation() {
-	const menu = document.querySelector('.main-menu');
-
-
-	if (menu.children[0].classList.contains('animate-item')) {
-		for (let i = menu.children.length - 1; i >= 0; i--) {
-			(function (i) {
-				setTimeout(function () { menu.children[i].classList.remove("animate-item"); }, 100 * (menu.children.length - 1 - i));
-			})(i);
-		}
-	} else {
-		for (let i = 0; i < menu.children.length; i++) {
-			(function (i) {
-				setTimeout(function () { menu.children[i].classList.add("animate-item"); }, 100 * i);
-			})(i);
-		}
-	}
-}
-
 function scrollToSection() {
 	const scrolls = document.querySelectorAll("[scroll-to]");
 
@@ -60,8 +38,6 @@ function scrollToSection() {
 			const dataScroll = this.getAttribute("scroll-to");
 			const offsetTop = document.querySelector(`#${dataScroll}`).getBoundingClientRect().top;
 
-			document.body.classList.remove('menu-opened');
-
 			if (window.innerWidth < 992) {
 				setTimeout(addAnimation, 200);
 			}
@@ -73,8 +49,6 @@ function scrollToSection() {
 		}
 	}
 }
-
-
 
 function initModals() {
 	const open_btns = document.querySelectorAll("[toggle-modal]");

@@ -4,6 +4,10 @@
 
 		.col {
 			margin-bottom: 1rem;
+
+			@include breakpoint(sm, max) {
+				width: 50%;
+			}
 		}
 	}
 
@@ -12,6 +16,10 @@
 
 		@include breakpoint(md, max) {
 			margin-bottom: 3.6rem;
+		}
+
+		@include breakpoint(sm, max) {
+			margin-bottom: 2.5rem;
 		}
 	}
 
@@ -22,6 +30,13 @@
 
 		@include breakpoint(md, max) {
 			padding-top: 5.6rem;
+		}
+
+		@include breakpoint(sm, max) {
+			padding-top: 4.2rem;
+			padding-left: 2.4rem;
+			padding-right: 2.4rem;
+			padding-bottom: 1.3rem;
 		}
 	}
 
