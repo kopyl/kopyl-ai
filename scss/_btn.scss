@@ -1,0 +1,33 @@
+.btn {
+	min-height: 5.6rem;
+	display: inline-flex;
+	align-items: center;
+	justify-content: center;
+	padding: 0 3.4rem;
+	font-weight: 600;
+	font-size: 1.8rem;
+	line-height: 1.18;
+	color: #0a0118;
+	border-radius: 99.9rem;
+
+	@include breakpoint(sm, max) {
+		padding: 0 4.1rem;
+		font-size: 1.6rem;
+	}
+
+	&-light {
+		color: #0a0118;
+		border: solid 0.2rem white;
+		background: white;
+
+		&:hover {
+			opacity: 0.8;
+		}
+	}
+}
+
+a {
+	&.btn {
+		text-decoration: none;
+	}
+}
