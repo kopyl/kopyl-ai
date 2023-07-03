@@ -1,0 +1,125 @@
+.section-4 {
+	.row {
+		@include breakpoint(md, max) {
+			@include set-gutter(1rem);
+		}
+
+		.col {
+			margin-bottom: 2rem;
+
+			@include breakpoint(md, max) {
+				margin-bottom: 1rem;
+			}
+
+			@include breakpoint(sm, max) {
+				width: 100%;
+			}
+		}
+	}
+
+	.h2 {
+		margin-bottom: 5.3rem;
+
+		@include breakpoint(md, max) {
+			margin-bottom: 3.6rem;
+		}
+
+		@include breakpoint(sm, max) {
+			margin-bottom: 4.1rem;
+			align-self: flex-start;
+		}
+	}
+
+	.section-block {
+		padding-top: 7.8rem;
+		padding-left: 4.8rem;
+		padding-right: 4.8rem;
+		padding-bottom: 2.8rem;
+
+		@include breakpoint(md, max) {
+			padding-top: 5.6rem;
+			padding-bottom: 3.6rem;
+		}
+
+		@include breakpoint(sm, max) {
+			padding-top: 3.9rem;
+			padding-left: 2.1rem;
+			padding-right: 2.1rem;
+			padding-bottom: 1.1rem;
+		}
+	}
+
+	.card {
+		position: relative;
+		height: 100%;
+		padding: 3.2rem 3.4rem 2.5rem 3.4rem;
+		border-radius: 0.6rem;
+		border: 0.1rem solid rgba(255, 255, 255, 0.1);
+		background: rgba(255, 255, 255, 0.05);
+		transition: $transition;
+
+		@include breakpoint(md, max) {
+			padding: 2.3rem 2.1rem 1.8rem 2.1rem;
+		}
+
+		@include breakpoint(sm, max) {
+			padding-left: 2.5rem;
+		}
+
+		&:hover {
+			@include breakpoint(md, min) {
+				background: rgba(255, 255, 255, 0.07);
+			}
+		}
+
+		.icon-holder {
+			display: flex;
+			margin-bottom: 3.1rem;
+
+			@include breakpoint(md, max) {
+				width: 4.7rem;
+				margin-bottom: 2.5rem;
+			}
+
+			img {
+				@include breakpoint(md, max) {
+					width: 100%;
+					height: auto;
+				}
+			}
+		}
+
+		.h3 {
+			margin-bottom: 0.4rem;
+			font-size: 2.4rem;
+			color: white;
+
+			@include breakpoint(md, max) {
+				margin-bottom: 0.6rem;
+				font-size: 1.8rem;
+			}
+		}
+
+		.text-holder {
+			font-size: 1.8rem;
+			color: #babcd2;
+
+			@include breakpoint(md, max) {
+				font-size: 1.4rem;
+			}
+
+			p {
+				margin-bottom: 0;
+			}
+		}
+
+		a {
+			position: absolute;
+			top: 0;
+			left: 0;
+			width: 100%;
+			height: 100%;
+			opacity: 0;
+		}
+	}
+}

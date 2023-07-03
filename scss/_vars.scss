@@ -1,0 +1,25 @@
+// vars
+$images: "../images/";
+
+// fonts
+$main-font: "Inter", sans-serif;
+
+// breakpoints
+$breakpoints: (
+	sm: 575px,
+	md: 768px,
+	lg: 992px,
+	xl: 1200px,
+	xxl: 1440px
+);
+
+// base vars
+$main-color: #0045f5;
+$text-color-base: #babcd2;
+$body-bg: #0a0118;
+$font-family-base: $main-font;
+$font-size-base: 1.6rem;
+$font-weight-base: 400;
+$line-height-base: 1.4;
+$links-color-base: inherit;
+$transition: all 0.3s ease;
