@@ -1,6 +1,10 @@
 .section-6 {
 	padding-bottom: 4rem;
 
+	@include breakpoint(md, max) {
+		padding-bottom: 0;
+	}
+
 	.container {
 		max-width: 188.2rem;
 
@@ -16,6 +20,7 @@
 		overflow: hidden;
 
 		@include breakpoint(md, max) {
+			margin-bottom: 0;
 			padding-top: 17.1rem;
 			border-radius: 0;
 		}
