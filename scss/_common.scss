@@ -97,6 +97,19 @@
 		z-index: 2;
 		max-width: 57.5rem;
 		width: 100%;
+
+		@include breakpoint(md, max) {
+			max-width: 100%;
+		}
+	}
+
+	.img-holder {
+		display: flex;
+
+		img {
+			width: 100%;
+			height: auto;
+		}
 	}
 
 	.text-holder {

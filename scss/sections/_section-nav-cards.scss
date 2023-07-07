@@ -25,11 +25,12 @@
 		background: radial-gradient(circle at 100% 100%, #0a0118 0, #0a0118 15px, transparent 15px) 0% 0%/16px 16px no-repeat, radial-gradient(circle at 0 100%, #0a0118 0, #0a0118 15px, transparent 15px) 100% 0%/16px 16px no-repeat, radial-gradient(circle at 100% 0, #0a0118 0, #0a0118 15px, transparent 15px) 0% 100%/16px 16px no-repeat, radial-gradient(circle at 0 0, #0a0118 0, #0a0118 15px, transparent 15px) 100% 100%/16px 16px no-repeat, linear-gradient(#0a0118, #0a0118) 50% 50% / calc(100% - 2px) calc(100% - 32px) no-repeat, linear-gradient(#0a0118, #0a0118) 50% 50% / calc(100% - 32px) calc(100% - 2px) no-repeat, linear-gradient(0deg, rgba(255, 255, 255, 0.1) 0%, rgba(255, 255, 255, 0.4) 100%);
 		padding: 0.7rem;
 		cursor: pointer;
-		transition: all 0.3s linear;
+		transition: all 0.2s linear;
 
 		&:hover {
 			@include breakpoint(md, min) {
-				filter: brightness(1.2);
+				transform: translateY(-1rem);
+				filter: brightness(1.3);
 			}
 		}
 

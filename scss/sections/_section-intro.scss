@@ -1,8 +1,11 @@
 .section-intro {
+	position: relative;
 	padding-top: 18rem;
 	min-height: 58.6rem;
-	background: url("#{$images}bg-01.svg") no-repeat;
-	background-position: center;
+	background: url("#{$images}bg-05.svg") no-repeat;
+	background-position: center bottom;
+	background-size: cover;
+	overflow: hidden;
 
 	@include breakpoint(md, max) {
 		padding-top: 16.7rem;
@@ -14,7 +17,21 @@
 		padding-top: 14.7rem;
 	}
 
+	&::before {
+		content: "";
+		position: absolute;
+		top: 0;
+		left: 50%;
+		transform: translate(-57%, -57%);
+		width: 149rem;
+		height: 89.6rem;
+		background: url("#{$images}illustration-07.svg") no-repeat;
+		background-size: 121rem;
+		background-position: center top;
+	}
+
 	.content-holder {
+		position: relative;
 		display: flex;
 		flex-direction: column;
 		align-items: center;
