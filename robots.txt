@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://xxx/sitemap.xml
+Sitemap: https://kopyloleh.com/sitemap.xml
