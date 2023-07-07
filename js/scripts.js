@@ -14,17 +14,16 @@ function scrollToSection() {
 		function clickHandler(e) {
 			e.preventDefault();
 			const dataScroll = this.getAttribute("scroll-to");
-			const offsetTop = document.querySelector(`#${dataScroll}`).getBoundingClientRect().top;
+			const section = document.querySelector(`#${dataScroll}`);
+			const sectionTop = section.getBoundingClientRect().top + window.pageYOffset;
 
-			if (window.innerWidth < 992) {
-				setTimeout(addAnimation, 200);
-			}
-
-			scroll({
-				top: offsetTop,
+			window.scrollTo({
+				top: sectionTop,
 				behavior: "smooth"
 			});
 		}
+
+
 	}
 }
 
