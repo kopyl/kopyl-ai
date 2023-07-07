@@ -1,6 +1,8 @@
 .section-1 {
 	.section-block {
 		min-height: 66.6rem;
+		justify-content: space-between;
+		overflow: hidden;
 
 		@include breakpoint(md, max) {
 			min-height: 45.5rem;
@@ -9,23 +11,6 @@
 		@include breakpoint(sm, max) {
 			min-height: 31rem;
 			padding-top: 4rem;
-		}
-
-		&::before {
-			content: "";
-			position: absolute;
-			top: 0;
-			left: 0;
-			width: 100%;
-			height: 100%;
-			background: url("#{$images}illustration-03.svg") no-repeat;
-			background-position: right bottom;
-			background-size: 100%;
-
-			@include breakpoint(sm, max) {
-				background-position: 50% 134%;
-				background-size: 140%;
-			}
 		}
 
 		.content-holder {
@@ -56,11 +41,14 @@
 	}
 
 	.img-holder {
-		display: flex;
+		margin-top: -7.1%;
 
-		img {
-			width: 100%;
-			height: auto;
+		@include breakpoint(md, max) {
+			margin-top: -9.2%;
+		}
+
+		@include breakpoint(sm, max) {
+			transform: scale(1.4) translate(0%, -7%);
 		}
 	}
 }
